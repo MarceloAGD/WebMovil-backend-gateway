@@ -11,9 +11,7 @@ import { GraphQLModule } from '@nestjs/graphql';
       gateway:{
         supergraphSdl: new IntrospectAndCompose ({
           subgraphs:[
-            {name: 'users', url: 'http://host.docker.internal:4001/graphql'},
-            {name: 'playlists', url: 'http://host.docker.internal:4002/graphql'},
-            {name: 'movies', url: 'http://host.docker.internal:4003/graphql'},
+            {name: 'users', url: 'http://localhost:4001/graphql'},
           ]
         })
       }
